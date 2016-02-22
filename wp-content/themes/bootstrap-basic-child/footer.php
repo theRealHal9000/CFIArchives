@@ -12,16 +12,7 @@
 				<div class="container">
 					<div id="footer-row" class="row site-footer">
 						<div class="col-lg-12 footerSection">
-							<h3>
-								The Scientific Review of Alternative Medicine
-							</h3>
-							<p>
-								<em>Devoted to objectively analyzing the claims of alternative medicine.</em>
-							</p>
-							<br />
-							<p class="footerCaps">
-								CREATED BY:
-							</p>
+							
 						</div>
 					</div>
 					<div class="row">

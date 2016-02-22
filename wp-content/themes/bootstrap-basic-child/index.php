@@ -13,9 +13,12 @@ get_header();
 $main_column_size = bootstrapBasicGetMainColumnSize();
 ?>
 
-<?php get_sidebar('left'); ?> 
-	<div class="col-md-<?php echo $main_column_size; ?> content-area" id="main-column">
+<?php //get_sidebar('left'); ?>
+	<div class="col-md-12 content-area" id="main-column">
 		<main id="main" class="site-main headroom" role="main">
+				<img class="main-image" src="<?php echo esc_url(home_url()); ?>/wp-content/uploads/2016/02/cfi-archives-logo.jpg" />
+				<h2 class="tagline">Insert grand tagline about 25 years of reason, science, secularism, etc.</h3>
+
 				<?php if (have_posts()) { ?> 
 				<?php 
 				// start the loop

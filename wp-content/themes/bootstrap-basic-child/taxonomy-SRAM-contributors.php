@@ -12,7 +12,7 @@ get_header();
  */
 $main_column_size = bootstrapBasicGetMainColumnSize();
 ?> 
-<?php get_sidebar('left'); ?> 
+<?php get_sidebar('sram'); ?> 
 				<div class="col-md-<?php echo $main_column_size; ?> content-area" id="main-column">
 					<main id="main" class="site-main headroom" role="main">
 						<?php if (have_posts()) {  
@@ -61,7 +61,7 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 							 * If you want to override this in a child theme, then include a file
 							 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 							 */
-							get_template_part('content-excerpts', get_post_format());
+							get_template_part('sramcontent-excerpts', get_post_format());
 						} //endwhile; 
 						?> 
 

@@ -1,3 +1,4 @@
+
 <?php
 /**
  * The theme header
@@ -13,7 +14,7 @@
 	<head>
 		<meta charset="<?php bloginfo('charset'); ?>">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title><?php wp_title('|', true, 'right'); ?></title>
+		<title>CFI Archives: <?php wp_title('|', true, 'right'); ?></title>
 		<meta name="viewport" content="width=device-width">
 
 		<link rel="profile" href="http://gmpg.org/xfn/11">
@@ -35,11 +36,12 @@
 					<div class="row main-navigation">
 						<div class="col-xl-12">
 							<div class="navbar-header">
-									<h1 class="navigation-bar"><a class="black" href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><img class="header-logo" src="<?php echo esc_url(home_url('/')); ?>/wp-content/uploads/2016/02/cfi-archives-header.png" /></a></h1>
+									<h1 class="navigation-bar"><a class="black" href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><span class="main-title"><?php bloginfo('name'); ?></span></a> / The Scientific Review of Alternative Medicine</h1>
 							</div>
-							<br />
+						
 							<div class="collapse navbar-collapse navbar-primary-collapse">
 								<?php wp_nav_menu(array('theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav navbar-nav', 'walker' => new BootstrapBasicMyWalkerNavMenu())); ?> 
+								<?php dynamic_sidebar('navbar-right'); ?> 
 							</div><!--.navbar-collapse-->
 						</div>
 					</div><!--.main-navigation-->
@@ -47,22 +49,8 @@
 				</div>
 			</nav>
 		</header>
-<?php if ( is_post_type_archive() || is_single()) : ?>
-	<div class="publication-header">
-		<div class="container">
-			<div class="col-xl-12">
-				<h3><?php $post_type = get_post_type_object( get_post_type($post) );
-echo $post_type->description ; ?></h3>
-
-			</div>
-		</div>
-	</div>
+			
+		
 		<div class="container page-container">
 			<?php do_action('before'); ?> 	
 			<div id="content" class="row site-content">
-<?php else : ?>
-	<div class="container page-container">
-			<?php do_action('before'); ?> 	
-			<div id="content" class="row site-content">
-
-<?php endif; ?> 

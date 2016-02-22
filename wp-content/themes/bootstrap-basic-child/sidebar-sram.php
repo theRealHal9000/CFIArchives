@@ -1,4 +1,4 @@
-<?php if (is_active_sidebar('sidebar-left')) { ?> 
+<?php if (is_active_sidebar('sram')) { ?> 
 			<!-- For mobile views -->
 				<div class="col-md-3 visible-xs-block" id="sidebar-left">
 					<nav class="navbar">
@@ -23,15 +23,15 @@
 													<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 														<div class="panel panel-default">
 															<a class="black" href="#info" role="button" data-toggle="collapse" data-parent="accordion" aria-expanded="false" aria-controls="info"><div class="panel-heading" role="tab" id="description">
-																<h4 class="panel-title">About Publication <span class="caret"></span></h4>
+																<h4 class="panel-title">About SRAM <span class="caret"></span></h4>
 															</div></a>
 															<div class="panel-collapse collapse" id="info" role="tabpanel" ariabelledby="description">
 																<div class="panel-body">
 																	<p>
-																		Information about the dates the publication was activ and its goals, accomplishments, current relevance, etc. 
+																		The purpose of the Scientific Review of Alternative Medicine is to apply the best tools of science and reason to determine whether hypotheses are valid and treatments are effective. It will reject no claims because it fits, or fails to fit, some paradigm. It will simply seek justified answers to two questions: "Is it true?" and "Does this treatment work?"
 																	</p>
 																	<p>
-																		Lorem ipsum dolor sit amet, eu idque volutpat scribentur per, quo habeo vulputate eloquentiam eu. Elit tantas ceteros ad eam, eu fuisset platonem mea. Quod audiam saperet sea ea, vix cu inimicus intellegam. Zril graeco alienum usu ad. Ius ea euismod aliquando appellantur. Nostrud consulatu cum ne.
+																		The publication of SRAM has been endorsed by the Commission for Scientific Medicine and Mental Health, a panel that includes prominent physicians, scientists, and Nobel prizewinners.
 																	</p>
 																</div>
 															</div>
@@ -47,13 +47,13 @@
 															<div class="panel-collapse collapse" id="contributors" role="tabpanel" ariabelledby="authors">
 																		<div class="panel-body">
 																			<ul>
-																					<?php $tags = get_terms('contributors', 'orderby=slug&order=ASC');
+																					<?php $tags = get_terms('SRAM-contributors', 'orderby=slug&order=ASC');
 																			$html = '';
 																			foreach ( $tags as $tag ) {
 																				$tag_link = get_tag_link( $tag->name );
 
 																				$html .= "<li><a class='black' href=";
-																				$html .= esc_url(home_url('contributors/'));
+																				$html .= esc_url(home_url('/sram-contributors/'));
 																				$html .= "{$tag->slug}";
 																				$html .= " title='{$tag->name} Tag' class='{$tag->slug}'>";
 																				$html .= "{$tag->name}</a></li>";
@@ -77,13 +77,13 @@
 															<div class="panel-collapse collapse" id="issues" role="tabpanel" ariabelledby="volumes">
 																		<div class="panel-body">
 																			<ul>
-																					<?php $tags = get_terms('issue-info');
+																					<?php $tags = get_terms('SRAM-issue-info');
 																			$html = '';
 																			foreach ( $tags as $tag ) {
 																				$tag_link = get_tag_link( $tag->name );
 
 																				$html .= "<li><a class='black' href=";
-																				$html .= esc_url(home_url('/issue-info/'));
+																				$html .= esc_url(home_url('/sram-issue-info/'));
 																				$html .= "{$tag->slug}";
 																				$html .= " title='{$tag->name} Tag' class='{$tag->slug}'>";
 																				$html .= "{$tag->name}</a></li>";
@@ -107,13 +107,13 @@
 															<div class="panel-collapse collapse" id="category" role="tabpanel" ariabelledby="topics">
 																		<div class="panel-body">
 																			<ul>
-																					<?php $tags = get_terms('category');
+																					<?php $tags = get_terms('SRAM-category');
 																		$html = '';
 																		foreach ( $tags as $tag ) {
 																			$tag_link = get_tag_link( $tag->name );
 
 																			$html .= "<li><a class='black' href=";
-																			$html .= esc_url(home_url('/category/'));
+																			$html .= esc_url(home_url('/sram-category/'));
 																			$html .= "{$tag->slug}";
 																			$html .= " title='{$tag->name} Tag' class='{$tag->slug}'>";
 																			$html .= "{$tag->name}</a></li>";
@@ -132,7 +132,7 @@
 													</div>
 												</div>
 											</div>
-												<!--<?php dynamic_sidebar('sidebar-left'); ?>-->
+												<!--<?php dynamic_sidebar('sidebar-sram'); ?>-->
 										</nav>
 									</div>
 
@@ -141,25 +141,25 @@
 				<div class="col-md-3 hidden-xs" id="sidebar-left">
 					<nav class="navbar">
 							<?php do_action('before_sidebar'); ?>
-								<div class="panel-group">
-									<div class="panel panel-default">
-										<a class="black" href="#"><div class="panel-heading">
-											<h4 class="panel-title">Search</h4>
-										</div></a>
-									</div>
+							<div class="panel-group">
+								<div class="panel panel-default">
+									<a class="black" href="#"><div class="panel-heading">
+										<h4 class="panel-title">Search</h4>
+									</div></a>
 								</div>
+							</div>
 								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 									<div class="panel panel-default">
 										<a class="black" href="#info2" role="button" data-toggle="collapse" data-parent="accordion" aria-expanded="false" aria-controls="info"><div class="panel-heading" role="tab" id="description2">
-											<h4 class="panel-title">About Publication <span class="caret"></span></h4>
+											<h4 class="panel-title">About SRAM <span class="caret"></span></h4>
 										</div></a>
 										<div class="panel-collapse collapse" id="info2" role="tabpanel" ariabelledby="description2">
 											<div class="panel-body">
 												<p>
-													Information about the dates the publication was activ and its goals, accomplishments, current relevance, etc. 
+													The purpose of the Scientific Review of Alternative Medicine is to apply the best tools of science and reason to determine whether hypotheses are valid and treatments are effective. It will reject no claims because it fits, or fails to fit, some paradigm. It will simply seek justified answers to two questions: "Is it true?" and "Does this treatment work?"
 												</p>
 												<p>
-													Lorem ipsum dolor sit amet, eu idque volutpat scribentur per, quo habeo vulputate eloquentiam eu. Elit tantas ceteros ad eam, eu fuisset platonem mea. Quod audiam saperet sea ea, vix cu inimicus intellegam. Zril graeco alienum usu ad. Ius ea euismod aliquando appellantur. Nostrud consulatu cum ne.
+													The publication of SRAM has been endorsed by the Commission for Scientific Medicine and Mental Health, a panel that includes prominent physicians, scientists, and Nobel prizewinners.
 												</p>
 											</div>
 										</div>
@@ -175,13 +175,13 @@
 										<div class="panel-collapse collapse" id="contributors2" role="tabpanel" ariabelledby="authors2">
 					         				<div class="panel-body">
 					         					<ul>
-									            	<?php $tags = get_terms('contributors', 'orderby=slug&order=ASC');
+									            	<?php $tags = get_terms('SRAM-contributors', 'orderby=slug&order=ASC');
 														$html = '';
 														foreach ( $tags as $tag ) {
 															$tag_link = get_tag_link( $tag->name );
 																	
 															$html .= "<li><a class='black' href=";
-															$html .= esc_url(home_url('contributors/'));
+															$html .= esc_url(home_url('/sram-contributors/'));
 															$html .= "{$tag->slug}";
 															$html .= " title='{$tag->name} Tag' class='{$tag->slug}'>";
 															$html .= "{$tag->name}</a></li>";
@@ -205,13 +205,13 @@
 										<div class="panel-collapse collapse" id="issues2" role="tabpanel" ariabelledby="volumes2">
 					         				<div class="panel-body">
 					         					<ul>
-									              <?php $tags = get_terms('issue-info');
+									              <?php $tags = get_terms('SRAM-issue-info');
 														$html = '';
 														foreach ( $tags as $tag ) {
 															$tag_link = get_tag_link( $tag->name );
 																	
 															$html .= "<li><a class='black' href=";
-															$html .= esc_url(home_url('/issue-info/'));
+															$html .= esc_url(home_url('/sram-issue-info/'));
 															$html .= "{$tag->slug}";
 															$html .= " title='{$tag->name} Tag' class='{$tag->slug}'>";
 															$html .= "{$tag->name}</a></li>";
@@ -235,13 +235,13 @@
 										<div class="panel-collapse collapse" id="category2" role="tabpanel" ariabelledby="topics2">
 					         				<div class="panel-body">
 					         					<ul>
-									              <?php $tags = get_terms('category');
+									              <?php $tags = get_terms('SRAM-category');
 													$html = '';
 													foreach ( $tags as $tag ) {
 														$tag_link = get_tag_link( $tag->name );
 																
 														$html .= "<li><a class='black' href=";
-														$html .= esc_url(home_url('/category/'));
+														$html .= esc_url(home_url('/sram-category/'));
 														$html .= "{$tag->slug}";
 														$html .= " title='{$tag->name} Tag' class='{$tag->slug}'>";
 														$html .= "{$tag->name}</a></li>";
@@ -256,7 +256,7 @@
 					         		</div>
 					         	</div>
 					         
-							<!--<?php dynamic_sidebar('sidebar-left'); ?>-->
+							<!--<?php dynamic_sidebar('sidebar-sram'); ?>-->
 					</nav>
 				</div>
 			

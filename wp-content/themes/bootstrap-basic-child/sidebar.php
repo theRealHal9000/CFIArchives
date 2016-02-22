@@ -1,4 +1,4 @@
-<?php if (is_active_sidebar('sidebar-left')) { ?> 
+<?php if (is_active_sidebar('sidebar-sram')) { ?> 
 			<!-- For mobile views -->
 				<div class="col-md-3 visible-xs-block" id="sidebar-left">
 					<nav class="navbar">
@@ -13,25 +13,45 @@
 										<div class="panel-collapse collapse" id="entire-menu" role="tabpanel" ariabelledby="rest-of-menu">
 											<div class="panel-body">
 												<!-- Inserted Main Menu -->	
+													<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+														<div class="panel panel-default">
+															<a class="black" href="#info" role="button" data-toggle="collapse" data-parent="accordion" aria-expanded="false" aria-controls="info"><div class="panel-heading" role="tab" id="description">
+																<h4 class="panel-title">What is SRAM? <span class="caret"></span></h4>
+															</div></a>
+															<div class="panel-collapse collapse" id="info" role="tabpanel" ariabelledby="description">
+																<div class="panel-body">
+																	<p>
+																		The purpose of the Scientific Review of Alternative Medicine is to apply the best tools of science and reason to determine whether hypotheses are valid and treatments are effective. It will reject no claims because it fits, or fails to fit, some paradigm. It will simply seek justified answers to two questions: "Is it true?" and "Does this treatment work?"
+																	</p>
+																	<p>
+																		The publication of SRAM has been endorsed by the Commission for Scientific Medicine and Mental Health, a panel that includes prominent physicians, scientists, and Nobel prizewinners.
+																	</p>
+																</div>
+															</div>
+														</div>
+													</div>
 													<div class="panel-group">
 														<div class="panel panel-default">
-															<a class="black" href="#"><div class="panel-heading">
-																<h4 class="panel-title">Search</h4>
+															<a class="black" href="<?php echo esc_url(home_url('/about/')); ?>"><div class="panel-heading">
+																<h4 class="panel-title">About</h4>
 															</div></a>
 														</div>
 													</div>
 													<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 														<div class="panel panel-default">
-															<a class="black" href="#info" role="button" data-toggle="collapse" data-parent="accordion" aria-expanded="false" aria-controls="info"><div class="panel-heading" role="tab" id="description">
-																<h4 class="panel-title">About Publication <span class="caret"></span></h4>
+															<a class="black" href="#contactus" role="button" data-toggle="collapse" data-parent="accordion" aria-expanded="false" aria-controls="contactus"><div class="panel-heading" role="tab" id="contact">
+																<h4 class="panel-title">Contact Us <span class="caret"></span></h4>
 															</div></a>
-															<div class="panel-collapse collapse" id="info" role="tabpanel" ariabelledby="description">
+															<div class="panel-collapse collapse" id="contactus" role="tabpanel" ariabelledby="contact">
 																<div class="panel-body">
 																	<p>
-																		Information about the dates the publication was activ and its goals, accomplishments, current relevance, etc. 
+																		<span class="panel-sub-heading allred">Editorial Inquiries</span><br />
+																		<strong>Wallace Sampson, Editor</strong><br />
+																		Email: <a class="red" href="mailto:wisampson@aol.com">wisampson@aol.com</a>
 																	</p>
 																	<p>
-																		Lorem ipsum dolor sit amet, eu idque volutpat scribentur per, quo habeo vulputate eloquentiam eu. Elit tantas ceteros ad eam, eu fuisset platonem mea. Quod audiam saperet sea ea, vix cu inimicus intellegam. Zril graeco alienum usu ad. Ius ea euismod aliquando appellantur. Nostrud consulatu cum ne.
+																		<span class="panel-sub-heading allred">General Inquiries</span><br />
+																		If you have questions about the <em>Scientific Review of Alternative Medicine</em>, please contact: <a class="red" href="mailto:info@centerforinquiry.net">info@centerforinquiry.net</a>
 																	</p>
 																</div>
 															</div>
@@ -141,25 +161,45 @@
 				<div class="col-md-3 hidden-xs" id="sidebar-left">
 					<nav class="navbar">
 							<?php do_action('before_sidebar'); ?>
+								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+									<div class="panel panel-default">
+										<a class="black" href="#info2" role="button" data-toggle="collapse" data-parent="accordion" aria-expanded="false" aria-controls="info"><div class="panel-heading" role="tab" id="description2">
+											<h4 class="panel-title">What is SRAM? <span class="caret"></span></h4>
+										</div></a>
+										<div class="panel-collapse collapse" id="info2" role="tabpanel" ariabelledby="description2">
+											<div class="panel-body">
+												<p>
+													The purpose of the Scientific Review of Alternative Medicine is to apply the best tools of science and reason to determine whether hypotheses are valid and treatments are effective. It will reject no claims because it fits, or fails to fit, some paradigm. It will simply seek justified answers to two questions: "Is it true?" and "Does this treatment work?"
+												</p>
+												<p>
+													The publication of SRAM has been endorsed by the Commission for Scientific Medicine and Mental Health, a panel that includes prominent physicians, scientists, and Nobel prizewinners.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
 								<div class="panel-group">
 									<div class="panel panel-default">
-										<a class="black" href="#"><div class="panel-heading">
-											<h4 class="panel-title">Search</h4>
+										<a class="black" href="<?php echo esc_url(home_url('/about/')); ?>"><div class="panel-heading">
+											<h4 class="panel-title">About</h4>
 										</div></a>
 									</div>
 								</div>
 								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 									<div class="panel panel-default">
-										<a class="black" href="#info2" role="button" data-toggle="collapse" data-parent="accordion" aria-expanded="false" aria-controls="info"><div class="panel-heading" role="tab" id="description2">
-											<h4 class="panel-title">About Publication <span class="caret"></span></h4>
+										<a class="black" href="#contactus2" role="button" data-toggle="collapse" data-parent="accordion" aria-expanded="false" aria-controls="contactus"><div class="panel-heading" role="tab" id="contact2">
+											<h4 class="panel-title">Contact Us <span class="caret"></span></h4>
 										</div></a>
-										<div class="panel-collapse collapse" id="info2" role="tabpanel" ariabelledby="description2">
+										<div class="panel-collapse collapse" id="contactus2" role="tabpanel" ariabelledby="contact2">
 											<div class="panel-body">
 												<p>
-													Information about the dates the publication was activ and its goals, accomplishments, current relevance, etc. 
+													<span class="panel-sub-heading allred">Editorial Inquiries</span><br />
+													<strong>Wallace Sampson, Editor</strong><br />
+													Email: <a class="red" href="mailto:wisampson@aol.com">wisampson@aol.com</a>
 												</p>
 												<p>
-													Lorem ipsum dolor sit amet, eu idque volutpat scribentur per, quo habeo vulputate eloquentiam eu. Elit tantas ceteros ad eam, eu fuisset platonem mea. Quod audiam saperet sea ea, vix cu inimicus intellegam. Zril graeco alienum usu ad. Ius ea euismod aliquando appellantur. Nostrud consulatu cum ne.
+													<span class="panel-sub-heading allred">General Inquiries</span><br />
+													If you have questions about the <em>Scientific Review of Alternative Medicine</em>, please contact: <a class="red" href="mailto:info@centerforinquiry.net">info@centerforinquiry.net</a>
 												</p>
 											</div>
 										</div>
